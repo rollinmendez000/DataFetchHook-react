@@ -23,7 +23,7 @@ const CoffeeList = () => {
     <div>
       {data &&
         data.map((coffee) => (
-          <div className="coffee">
+          <div className="coffee" key={coffee.id}>
             <h2>{coffee.title}</h2>
             <img src={coffee.image} alt={coffee.title} />
             <div>Description: {coffee.description}</div>
